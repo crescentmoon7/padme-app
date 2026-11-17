@@ -44,12 +44,13 @@
 <h2>Raporty o awariach</h2>
 <p>Przy pierwszym uruchomieniu PadMe pyta, czy może wysyłać raporty o awariach. Nic nie jest wysyłane, dopóki nie wybierzesz „Wysyłaj raporty o awariach”. Odpowiedź możesz zmienić w każdej chwili przełącznikiem „Wysyłaj raporty o awariach” w oknie O PadMe; wyłączenie go od razu zatrzymuje wysyłanie.</p>
 <ul>
-<li><strong>Co zawiera raport:</strong> rodzaj błędu i miejsce w kodzie PadMe, w którym wystąpił (ślad stosu), wersję PadMe, wersję Androida oraz producenta, markę i model telefonu, a także czas i losowy identyfikator raportu. Zanim raport opuści telefon, PadMe usuwa z niego treść komunikatów o błędach (mogą zawierać nazwy plików, zestawów lub sampli), identyfikator instalacji tworzony przez bibliotekę raportów i wszelkie inne dane o telefonie. Raport nigdy nie zawiera Twoich sampli, zestawów, nazw plików, historii ani ustawień.</li>
+<li><strong>Co zawiera raport:</strong> rodzaj błędu i miejsce w kodzie PadMe, w którym wystąpił (ślad stosu wątku, który uległ awarii, bez ścieżek plików i bibliotek w telefonie), wersję PadMe, wersję Androida oraz producenta, markę i model telefonu, a także czas i losowy identyfikator raportu. Zanim raport opuści telefon, PadMe usuwa z niego treść komunikatów o błędach (mogą zawierać nazwy plików, zestawów lub sampli), identyfikator instalacji tworzony przez bibliotekę raportów i wszelkie inne dane o telefonie. Raport nigdy nie zawiera Twoich sampli, zestawów, nazw plików, historii ani ustawień.</li>
 <li><strong>Cel:</strong> znalezienie i naprawienie przyczyn awarii PadMe.</li>
 <li><strong>Podstawa prawna:</strong> Twoja zgoda (art. 6 ust. 1 lit. a RODO). Możesz ją w każdej chwili wycofać przełącznikiem; nie wpływa to na raporty wysłane wcześniej.</li>
 <li><strong>Odbiorca:</strong> Sentry, usługa Functional Software, Inc. (USA), która przechowuje raporty w naszym imieniu w swoim regionie danych w UE (Frankfurt, Niemcy) na podstawie umowy powierzenia przetwarzania. Przekazanie danych do USA, np. w ramach pomocy technicznej, odbywa się na podstawie EU–US Data Privacy Framework i standardowych klauzul umownych. Sentry widzi adres internetowy, z którego przychodzi raport; nasz projekt w Sentry jest ustawiony tak, by go nie zapisywać.</li>
 <li><strong>Jak długo:</strong> raporty są usuwane automatycznie najpóźniej po 90 dniach.</li>
-<li><strong>Na telefonie:</strong> raport czekający na wysłanie zostaje w pamięci PadMe do czasu wysłania; odinstalowanie PadMe lub wyczyszczenie jej danych go usuwa.</li>
+<li><strong>Czego się nie wysyła:</strong> raportów o tym, że PadMe nie odpowiada („aplikacja nie odpowiada”), ani o awariach w kodzie samego Androida, bo zawierają stan całej aplikacji.</li>
+<li><strong>Na telefonie:</strong> raport czekający na wysłanie zostaje w pamięci PadMe do czasu wysłania. Gdy wyłączysz raporty, PadMe sprawdza Twoją odpowiedź jeszcze raz tuż przed wysłaniem każdego raportu, więc ten, który już czeka, nie zostanie wysłany, i usuwa czekające raporty; odinstalowanie PadMe lub wyczyszczenie jej danych też je usuwa.</li>
 </ul>
 <p>Prawa opisane w części „Jeśli do nas napiszesz” dotyczą też raportów o awariach. Raport nie zawiera imienia ani adresu, więc jeśli chcesz wcześniej usunąć raporty, napisz, mniej więcej kiedy PadMe uległa awarii i na jakim modelu telefonu.</p>
 <h2>Usuwanie danych</h2>
@@ -57,7 +58,7 @@
 <li>Odinstalowanie PadMe albo „Wyczyść dane” w ustawieniach Androida dla PadMe usuwa wszystko z tabeli powyżej.</li>
 <li>„Cofnij dostęp do tego pada” odbiera PadMe dostęp do tego pada; jego historia, szkice i notatki o tempie zostają na telefonie. Historia i szkice znikają, gdy pad nie był otwierany przez 180 dni i otworzysz inny pad; notatki o tempie i zapis pada zostają do wyczyszczenia danych aplikacji.</li>
 <li>Zapisane kopie zapasowe zostają tam, gdzie je zapisałeś; usuń je w tamtym miejscu.</li>
-<li>Po naszej stronie nie ma czego usuwać, bo niczego nie mamy.</li>
+<li>Twoje sample, zestawy, historia i ustawienia nigdy do nas nie trafiają, więc po naszej stronie nie ma czego z nich usuwać. Raporty o awariach, jeśli zgodziłeś się je wysyłać, są usuwane tak, jak opisuje część „Raporty o awariach”; wyłączenie ich usuwa też raporty czekające jeszcze w telefonie.</li>
 </ul>
 <h2>Google Play</h2>
 <p>PadMe pobierasz z Google Play. Google przetwarza dane o pobraniu i zakupie zgodnie z polityką prywatności Google. Możemy widzieć anonimowe statystyki, które Google Play daje każdemu twórcy, np. liczbę instalacji w poszczególnych krajach, oraz raporty o awariach z telefonów, których właściciele zgodzili się udostępniać je Google. Google przekazuje nam informacje o zamówieniach, takie jak numer zamówienia, produkt, cena i kraj; używamy ich tylko do obsługi zwrotów, pomocy i rozliczeń i przechowujemy tak długo, jak wymagają przepisy podatkowe.</p>
