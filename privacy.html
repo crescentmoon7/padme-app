@@ -15,9 +15,9 @@
 <p>PadMe is an Android app for managing kits and samples on a drum sampling pad connected to the phone by USB. It is made by sionkoVerse, Na Stoku 6, 72-003 Dobra, Poland ("we"). PadMe is an independent app. It is not made, endorsed or supported by Roland Corporation. Roland and SPD-SX are trademarks of Roland Corporation.</p>
 <h2>In short</h2>
 <ul>
-<li>PadMe makes no network connections of its own: it has no permission to use the internet, and we run no server that collects anything.</li>
+<li>PadMe sends something over the internet only if you agree: a crash report when it crashes (see "Crash reports"). Otherwise it makes no network connections of its own, and we run no server that collects anything.</li>
 <li>Files leave the phone only where you send them yourself. If you save a backup to a cloud folder such as Google Drive, that service uploads it, under its own terms (see "Backups" below).</li>
-<li>PadMe has no account, no advertising, no analytics and no crash reporting.</li>
+<li>PadMe has no account, no advertising and no analytics.</li>
 <li>What PadMe keeps, it keeps on your phone, in storage only PadMe can read. It is not included in Android's cloud backup or in a transfer to a new phone.</li>
 <li>We never receive your samples, kits, history or anything else from the app.</li>
 </ul>
@@ -41,6 +41,17 @@
 </tbody>
 </table></div>
 <p>Like any Android app, PadMe writes short technical messages to the phone's system log, for example how long a step took or an error message, which can include a file name. They stay on the phone. Whether Android or Google collect diagnostics from your phone depends on your phone's settings and Google's own policies, not on PadMe.</p>
+<h2>Crash reports</h2>
+<p>PadMe asks the first time you open it whether it may send crash reports. Nothing is sent unless you tap "Send crash reports". You can change your answer at any time with the "Send crash reports" switch in About PadMe; switching it off stops all sending at once.</p>
+<ul>
+<li><strong>What a report holds:</strong> the kind of error and where in PadMe's code it happened (the stack trace), the version of PadMe, the Android version, and the phone's manufacturer, brand and model, plus the time and a random ID of the report. Before a report leaves the phone, PadMe removes error messages (they can contain file, kit or sample names), the installation ID the reporting library makes, and any other details about the phone. A report never contains your samples, kits, file names, history or settings.</li>
+<li><strong>Purpose:</strong> to find and fix what makes PadMe crash.</li>
+<li><strong>Legal basis:</strong> your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time with the switch; that does not affect reports sent before.</li>
+<li><strong>Recipient:</strong> Sentry, a service of Functional Software, Inc. (USA), which stores the reports for us in its EU data region (Frankfurt, Germany) under a data processing agreement. Transfers to the USA, for example for support, are covered by the EU–US Data Privacy Framework and standard contractual clauses. Sentry sees the internet address a report comes from; our Sentry project is set not to store it.</li>
+<li><strong>How long:</strong> reports are deleted automatically after 90 days at the latest.</li>
+<li><strong>On the phone:</strong> a report waiting to be sent stays in PadMe's storage until it is sent; uninstalling PadMe or clearing its storage deletes it.</li>
+</ul>
+<p>You have the rights listed under "If you write to us" for crash reports too. A report carries no name or address, so to have reports deleted early, tell us roughly when PadMe crashed and on which phone model.</p>
 <h2>Deleting your data</h2>
 <ul>
 <li>Uninstalling PadMe, or "Clear storage" in Android's settings for PadMe, deletes everything in the table above.</li>
@@ -56,7 +67,7 @@
 <p>If you contact us at <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a>, we use your message and email address only to answer you and to handle what you asked about, such as a problem with PadMe or a refund. The legal basis is our legitimate interest in answering you (Art. 6(1)(f) GDPR). We keep the messages as long as that takes and as long as a related claim is possible, then delete them. Our email is provided by Google.</p>
 <p>The controller of this data is sionkoVerse, Na Stoku 6, 72-003 Dobra, Poland, <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a>. You have the right to access your data, to have it corrected or deleted, to restrict its use and to object to it, and to complain to a data protection authority; in Poland that is the President of the Personal Data Protection Office (UODO).</p>
 <h2>Changes</h2>
-<p>If PadMe ever starts to send data off the phone, for example for crash reporting or sharing kits, we will update this policy and the Google Play data safety section before that version is released, and say what changed at the top of this page.</p>
+<p>If PadMe ever starts to send other data off the phone, for example for sharing kits, we will update this policy and the Google Play data safety section before that version is released, and say what changed at the top of this page.</p>
 <h2>Contact</h2>
 <p>sionkoVerse, Na Stoku 6, 72-003 Dobra, Poland. Email: <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a></p>
 </main>

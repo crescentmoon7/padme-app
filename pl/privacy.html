@@ -15,9 +15,9 @@
 <p>PadMe to aplikacja na Androida do zarządzania zestawami i samplami na padzie perkusyjnym podłączonym do telefonu przez USB. Jej autorem jest sionkoVerse, Na Stoku 6, 72-003 Dobra („my”). PadMe jest niezależną aplikacją. Nie jest tworzona, popierana ani wspierana przez Roland Corporation. Roland i SPD-SX są znakami towarowymi Roland Corporation.</p>
 <h2>W skrócie</h2>
 <ul>
-<li>PadMe sama nie nawiązuje żadnych połączeń sieciowych: nie ma uprawnienia do korzystania z internetu, a my nie prowadzimy serwera, który cokolwiek zbiera.</li>
+<li>PadMe wysyła coś przez internet tylko za Twoją zgodą: raport, gdy ulegnie awarii (zob. „Raporty o awariach”). Poza tym sama nie nawiązuje żadnych połączeń sieciowych, a my nie prowadzimy serwera, który cokolwiek zbiera.</li>
 <li>Pliki opuszczają telefon tylko tam, gdzie sam je wyślesz. Jeśli zapiszesz kopię zapasową w folderze w chmurze, np. na Dysku Google, wysyła ją ta usługa, na własnych zasadach (zob. „Kopie zapasowe” niżej).</li>
-<li>PadMe nie ma konta, reklam, analityki ani raportowania awarii.</li>
+<li>PadMe nie ma konta, reklam ani analityki.</li>
 <li>To, co PadMe przechowuje, zostaje na Twoim telefonie, w pamięci dostępnej tylko dla PadMe. Nie trafia do kopii zapasowej Androida w chmurze ani do przenoszenia danych na nowy telefon.</li>
 <li>Nigdy nie dostajemy z aplikacji Twoich sampli, zestawów, historii ani niczego innego.</li>
 </ul>
@@ -41,6 +41,17 @@
 </tbody>
 </table></div>
 <p>Jak każda aplikacja na Androida, PadMe zapisuje krótkie komunikaty techniczne w dzienniku systemowym telefonu, np. ile trwał dany krok albo treść błędu, w której może być nazwa pliku. Zostają one na telefonie. To, czy Android lub Google zbierają dane diagnostyczne z Twojego telefonu, zależy od ustawień telefonu i zasad Google, a nie od PadMe.</p>
+<h2>Raporty o awariach</h2>
+<p>Przy pierwszym uruchomieniu PadMe pyta, czy może wysyłać raporty o awariach. Nic nie jest wysyłane, dopóki nie wybierzesz „Wysyłaj raporty o awariach”. Odpowiedź możesz zmienić w każdej chwili przełącznikiem „Wysyłaj raporty o awariach” w oknie O PadMe; wyłączenie go od razu zatrzymuje wysyłanie.</p>
+<ul>
+<li><strong>Co zawiera raport:</strong> rodzaj błędu i miejsce w kodzie PadMe, w którym wystąpił (ślad stosu), wersję PadMe, wersję Androida oraz producenta, markę i model telefonu, a także czas i losowy identyfikator raportu. Zanim raport opuści telefon, PadMe usuwa z niego treść komunikatów o błędach (mogą zawierać nazwy plików, zestawów lub sampli), identyfikator instalacji tworzony przez bibliotekę raportów i wszelkie inne dane o telefonie. Raport nigdy nie zawiera Twoich sampli, zestawów, nazw plików, historii ani ustawień.</li>
+<li><strong>Cel:</strong> znalezienie i naprawienie przyczyn awarii PadMe.</li>
+<li><strong>Podstawa prawna:</strong> Twoja zgoda (art. 6 ust. 1 lit. a RODO). Możesz ją w każdej chwili wycofać przełącznikiem; nie wpływa to na raporty wysłane wcześniej.</li>
+<li><strong>Odbiorca:</strong> Sentry, usługa Functional Software, Inc. (USA), która przechowuje raporty w naszym imieniu w swoim regionie danych w UE (Frankfurt, Niemcy) na podstawie umowy powierzenia przetwarzania. Przekazanie danych do USA, np. w ramach pomocy technicznej, odbywa się na podstawie EU–US Data Privacy Framework i standardowych klauzul umownych. Sentry widzi adres internetowy, z którego przychodzi raport; nasz projekt w Sentry jest ustawiony tak, by go nie zapisywać.</li>
+<li><strong>Jak długo:</strong> raporty są usuwane automatycznie najpóźniej po 90 dniach.</li>
+<li><strong>Na telefonie:</strong> raport czekający na wysłanie zostaje w pamięci PadMe do czasu wysłania; odinstalowanie PadMe lub wyczyszczenie jej danych go usuwa.</li>
+</ul>
+<p>Prawa opisane w części „Jeśli do nas napiszesz” dotyczą też raportów o awariach. Raport nie zawiera imienia ani adresu, więc jeśli chcesz wcześniej usunąć raporty, napisz, mniej więcej kiedy PadMe uległa awarii i na jakim modelu telefonu.</p>
 <h2>Usuwanie danych</h2>
 <ul>
 <li>Odinstalowanie PadMe albo „Wyczyść dane” w ustawieniach Androida dla PadMe usuwa wszystko z tabeli powyżej.</li>
@@ -56,7 +67,7 @@
 <p>Jeśli napiszesz na <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a>, użyjemy Twojej wiadomości i adresu e-mail tylko do odpowiedzi i załatwienia sprawy, o którą pytasz, np. problemu z PadMe albo zwrotu. Podstawą prawną jest nasz prawnie uzasadniony interes w odpowiedzi na wiadomość (art. 6 ust. 1 lit. f RODO). Wiadomości przechowujemy tak długo, jak to trwa i jak długo możliwe są związane z nią roszczenia, a potem je usuwamy. Naszą pocztę e-mail obsługuje Google.</p>
 <p>Administratorem tych danych jest sionkoVerse, Na Stoku 6, 72-003 Dobra, <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a>. Masz prawo dostępu do swoich danych, ich sprostowania lub usunięcia, ograniczenia przetwarzania, sprzeciwu oraz prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO).</p>
 <h2>Zmiany</h2>
-<p>Jeśli PadMe kiedykolwiek zacznie wysyłać dane poza telefon, np. do raportowania awarii albo udostępniania zestawów, zaktualizujemy tę politykę i sekcję bezpieczeństwa danych w Google Play przed wydaniem takiej wersji i napiszemy na górze tej strony, co się zmieniło.</p>
+<p>Jeśli PadMe kiedykolwiek zacznie wysyłać poza telefon inne dane, np. do udostępniania zestawów, zaktualizujemy tę politykę i sekcję bezpieczeństwa danych w Google Play przed wydaniem takiej wersji i napiszemy na górze tej strony, co się zmieniło.</p>
 <h2>Kontakt</h2>
 <p>sionkoVerse, Na Stoku 6, 72-003 Dobra. E-mail: <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a></p>
 </main>
