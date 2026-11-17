@@ -1,0 +1,39 @@
+/* PadMe site: the app's logo palette (docs/branding/README.md), system fonts only. */
+:root {
+  --bg: #fbf4ea;
+  --text: #0a0c0f;
+  --muted: #4a4d52;
+  --link: #b0022a;
+  --line: #e2d8ca;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0c0f;
+    --text: #fbf4ea;
+    --muted: #b9b2a8;
+    --link: #ff5c70;
+    --line: #2a2d33;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header, main, footer { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+nav { display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: baseline; }
+nav a { font-weight: 600; }
+nav a[aria-current="page"] { color: var(--text); text-decoration: none; }
+nav .lang { margin-left: auto; }
+a { color: var(--link); text-underline-offset: 2px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 1.5rem 0 0.5rem; }
+h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+code { font-size: 0.9em; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+footer { margin-top: 3rem; padding-bottom: 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }

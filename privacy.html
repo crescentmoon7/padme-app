@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PadMe privacy policy</title>
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="pl" href="https://crescentmoon7.github.io/padme-app/pl/privacy.html">
+</head>
+<body>
+<header><nav><a href="index.html">PadMe</a> <a href="privacy.html" aria-current="page">Privacy policy</a> <a href="terms.html">Terms of use</a> <span class="lang"><a href="pl/privacy.html" hreflang="pl" lang="pl">Polski</a></span></nav></header>
+<main>
+<h1>PadMe privacy policy</h1>
+<p>Last updated: 17 November 2026</p>
+<p>PadMe is an Android app for managing kits and samples on a drum sampling pad connected to the phone by USB. It is made by sionkoVerse, Na Stoku 6, 72-003 Dobra, Poland ("we"). PadMe is an independent app. It is not made, endorsed or supported by Roland Corporation. Roland and SPD-SX are trademarks of Roland Corporation.</p>
+<h2>In short</h2>
+<ul>
+<li>PadMe makes no network connections of its own: it has no permission to use the internet, and we run no server that collects anything.</li>
+<li>Files leave the phone only where you send them yourself. If you save a backup to a cloud folder such as Google Drive, that service uploads it, under its own terms (see "Backups" below).</li>
+<li>PadMe has no account, no advertising, no analytics and no crash reporting.</li>
+<li>What PadMe keeps, it keeps on your phone, in storage only PadMe can read. It is not included in Android's cloud backup or in a transfer to a new phone.</li>
+<li>We never receive your samples, kits, history or anything else from the app.</li>
+</ul>
+<h2>What PadMe works with</h2>
+<p><strong>Your pad's memory.</strong> When you connect the pad, Android's own folder picker asks you to let PadMe into the pad's folder. PadMe reads and changes only that folder, and only through that access. It writes to the pad only what you do in the app: saving a kit, adding, trimming, renaming or deleting a sample, copying a kit, changing a sample's tempo, undoing a change, or restoring a backup you chose. PadMe writes nothing of its own to the pad to recognise it.</p>
+<p>You can take the access back at any time: in PadMe with "Forget access to this pad", or in Android's settings for the app.</p>
+<p><strong>Sounds you add.</strong> When you add a sound, you pick the file in Android's file picker. PadMe reads that one file, converts it to the format the pad plays and writes the result to the pad. The conversion goes through temporary files in PadMe's cache on the phone, which PadMe deletes when the sound is added or the conversion fails. If Android stops PadMe in the middle, they can stay in the cache until the next sound you add replaces them, Android clears the cache, or you clear the app's storage.</p>
+<p><strong>Backups.</strong> A backup is a zip file with the pad's whole memory, your tempo notes, the model name, the date and time it was made, and the word "PadMe". PadMe saves it where you choose in Android's file picker. If you choose a cloud folder, such as Google Drive, the app that provides that folder uploads the file and stores it under its own terms; PadMe only hands the file to Android. When you restore a backup, PadMe copies it into its own storage on the phone while it checks and restores it, and deletes that copy when the restore finishes or you cancel it. If Android stops PadMe while it is asking you to confirm the restore, the copy stays in PadMe's storage until you choose a backup to restore again or clear the app's storage.</p>
+<h2>What PadMe keeps on your phone</h2>
+<p>All of this is in PadMe's private app storage:</p>
+<div class="table"><table>
+<thead><tr><th scope="col">What</th><th scope="col">Why</th><th scope="col">How long</th></tr></thead>
+<tbody>
+<tr><td>History of your last changes to each pad, with the files as they were before each change; this can include whole recordings a change replaced, for example by restoring a backup (a deleted sample is not kept once the deletion is done)</td><td>So you can undo a change, also after the app was closed</td><td>The last 10 changes per pad. Past about 1 GB for one pad, older changes are dropped, so fewer than 10 may be kept; the newest change always stays, even when it alone is larger (as a restore of a whole pad can be). A change cut short stays until it is put back. A pad not opened for 180 days loses its history when another pad is opened, except a change cut short</td></tr>
+<tr><td>Unsaved kit edits (drafts)</td><td>So a disconnect or Android closing the app does not lose your work</td><td>Until you save or discard them, or until another pad is opened after this pad was not opened for 180 days</td></tr>
+<tr><td>Tempo notes: tempos PadMe detected or you set, which samples are copies at another tempo, and a short fingerprint of each recording</td><td>To show and change tempos</td><td>Until you delete the app's data</td></tr>
+<tr><td>A record of each pad PadMe has opened: a one-way code (SHA-256) made from where the pad's folder is, including the drive's ID, when it was last opened, the names of its first kits, and a list of its kit names and sample names and paths</td><td>To tell your pads apart without writing to them, and to remind you which pad PadMe means</td><td>Until you delete the app's data</td></tr>
+<tr><td>Which pad folders you allowed (up to 10), and when each was last opened</td><td>So the same pad opens without asking again</td><td>Until you forget the access or the 10 newest replace it</td></tr>
+<tr><td>Settings: app language, theme, and whether PadMe still has to offer a backup or a reminder for a new pad</td><td>To remember your choices</td><td>Until you delete the app's data</td></tr>
+<tr><td>A demo card PadMe makes itself, if you try the demo</td><td>To try PadMe without a pad</td><td>Leaving the demo keeps it and your changes to it for next time; "Start the demo over" replaces it, and clearing the app's storage deletes it</td></tr>
+</tbody>
+</table></div>
+<p>Like any Android app, PadMe writes short technical messages to the phone's system log, for example how long a step took or an error message, which can include a file name. They stay on the phone. Whether Android or Google collect diagnostics from your phone depends on your phone's settings and Google's own policies, not on PadMe.</p>
+<h2>Deleting your data</h2>
+<ul>
+<li>Uninstalling PadMe, or "Clear storage" in Android's settings for PadMe, deletes everything in the table above.</li>
+<li>"Forget access to this pad" takes back PadMe's access to that pad; its history, drafts and tempo notes stay on the phone. The history and drafts go once the pad has not been opened for 180 days and another pad is opened; its tempo notes and pad record stay until you clear the app's storage.</li>
+<li>Backups you saved stay where you saved them; delete them there.</li>
+<li>Nothing needs to be deleted on our side, because we have none of it.</li>
+</ul>
+<h2>Google Play</h2>
+<p>You get PadMe through Google Play. Google processes data about your download and purchase under Google's privacy policy. We may see anonymous statistics Google Play gives every developer, such as the number of installs by country, and crash reports for phones whose owners chose to share them with Google. Google tells us about orders, such as the order number, product, price and country; we use that only to handle refunds, support and our accounts, and keep it as long as tax law requires.</p>
+<h2>Children</h2>
+<p>PadMe is a tool for musicians and is not directed at children.</p>
+<h2>If you write to us</h2>
+<p>If you contact us at <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a>, we use your message and email address only to answer you and to handle what you asked about, such as a problem with PadMe or a refund. The legal basis is our legitimate interest in answering you (Art. 6(1)(f) GDPR). We keep the messages as long as that takes and as long as a related claim is possible, then delete them. Our email is provided by Google.</p>
+<p>The controller of this data is sionkoVerse, Na Stoku 6, 72-003 Dobra, Poland, <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a>. You have the right to access your data, to have it corrected or deleted, to restrict its use and to object to it, and to complain to a data protection authority; in Poland that is the President of the Personal Data Protection Office (UODO).</p>
+<h2>Changes</h2>
+<p>If PadMe ever starts to send data off the phone, for example for crash reporting or sharing kits, we will update this policy and the Google Play data safety section before that version is released, and say what changed at the top of this page.</p>
+<h2>Contact</h2>
+<p>sionkoVerse, Na Stoku 6, 72-003 Dobra, Poland. Email: <a href="mailto:sionkoverse@gmail.com">sionkoverse@gmail.com</a></p>
+</main>
+<footer><p>PadMe is an independent app, not made or endorsed by Roland. Roland and SPD-SX are trademarks of Roland Corporation.</p></footer>
+</body>
+</html>
