@@ -32,11 +32,12 @@
 <thead><tr><th scope="col">Co</th><th scope="col">Po co</th><th scope="col">Jak długo</th></tr></thead>
 <tbody>
 <tr><td>Historia ostatnich zmian na każdym padzie, z plikami sprzed każdej zmiany; mogą to być całe nagrania zastąpione przez zmianę, np. przez przywrócenie kopii (usuniętego sampla PadMe nie zachowuje po zakończeniu usuwania)</td><td>Żeby można było cofnąć zmianę, także po zamknięciu aplikacji</td><td>Ostatnie 10 zmian na pad. Powyżej około 1 GB dla jednego pada starsze zmiany są usuwane, więc może ich zostać mniej niż 10; najnowsza zmiana zostaje zawsze, nawet gdy sama jest większa (jak przywrócenie całego pada). Zmiana przerwana zostaje, dopóki nie zostanie cofnięta. Pad nieotwierany przez 180 dni traci historię, gdy otworzysz inny pad, poza zmianą przerwaną</td></tr>
-<tr><td>Niezapisane zmiany zestawów (szkice)</td><td>Żeby odłączenie pada albo zamknięcie aplikacji przez Androida nie zgubiło pracy</td><td>Do zapisania lub odrzucenia albo do otwarcia innego pada, gdy ten pad nie był otwierany przez 180 dni</td></tr>
+<tr><td>Niezapisane zmiany zestawów (szkice), w tym ustawienia gry pada</td><td>Żeby odłączenie pada albo zamknięcie aplikacji przez Androida nie zgubiło pracy</td><td>Do zapisania lub odrzucenia albo do otwarcia innego pada, gdy ten pad nie był otwierany przez 180 dni</td></tr>
+<tr><td>Setlisty, które budujesz dla pada: nazwa i lista numerów zestawów</td><td>Żeby można było trzymać setlistę w telefonie, dopóki wysłanie jej na pad nie jest jeszcze możliwe</td><td>Do odrzucenia albo wyczyszczenia danych aplikacji</td></tr>
 <tr><td>Notatki o tempie: tempa wykryte przez PadMe lub ustawione przez Ciebie, które sample są kopiami w innym tempie, oraz krótki odcisk każdego nagrania</td><td>Żeby pokazywać i zmieniać tempo</td><td>Do usunięcia danych aplikacji</td></tr>
 <tr><td>Zapis każdego pada otwartego w PadMe: jednokierunkowy kod (SHA-256) z miejsca, w którym jest folder pada, łącznie z identyfikatorem nośnika, czas ostatniego otwarcia, nazwy pierwszych zestawów oraz lista nazw zestawów i nazw oraz ścieżek sampli</td><td>Żeby odróżniać Twoje pady bez zapisywania czegokolwiek na nich i przypominać, o który pad chodzi</td><td>Do usunięcia danych aplikacji</td></tr>
 <tr><td>Foldery padów, do których dałeś dostęp (najwyżej 10), i kiedy każdy był ostatnio otwarty</td><td>Żeby ten sam pad otwierał się bez ponownego pytania</td><td>Do cofnięcia dostępu albo zastąpienia przez 10 nowszych</td></tr>
-<tr><td>Ustawienia: język aplikacji, motyw oraz czy PadMe ma jeszcze zaproponować kopię zapasową lub przypomnienie dla nowego pada</td><td>Żeby pamiętać Twoje wybory</td><td>Do usunięcia danych aplikacji</td></tr>
+<tr><td>Ustawienia: język aplikacji, motyw, czy PadMe ma jeszcze zaproponować kopię zapasową lub przypomnienie dla nowego pada albo przed zapisaniem setlist, oraz Twoja odpowiedź w sprawie raportów o awariach</td><td>Żeby pamiętać Twoje wybory</td><td>Do usunięcia danych aplikacji</td></tr>
 <tr><td>Karta demo, którą PadMe tworzy sam, jeśli wypróbujesz demo</td><td>Żeby wypróbować PadMe bez pada</td><td>Wyjście z demo zachowuje je wraz z Twoimi zmianami na następny raz; „Zacznij demo od nowa” je zastępuje, a wyczyszczenie danych aplikacji je usuwa</td></tr>
 </tbody>
 </table></div>
@@ -56,7 +57,7 @@
 <h2>Usuwanie danych</h2>
 <ul>
 <li>Odinstalowanie PadMe albo „Wyczyść dane” w ustawieniach Androida dla PadMe usuwa wszystko z tabeli powyżej.</li>
-<li>„Cofnij dostęp do tego pada” odbiera PadMe dostęp do tego pada; jego historia, szkice i notatki o tempie zostają na telefonie. Historia i szkice znikają, gdy pad nie był otwierany przez 180 dni i otworzysz inny pad; notatki o tempie i zapis pada zostają do wyczyszczenia danych aplikacji.</li>
+<li>„Cofnij dostęp do tego pada” odbiera PadMe dostęp do tego pada; jego historia, szkice, setlisty i notatki o tempie zostają na telefonie. Historia i szkice znikają, gdy pad nie był otwierany przez 180 dni i otworzysz inny pad; notatki o tempie, setlisty i zapis pada zostają do wyczyszczenia danych aplikacji.</li>
 <li>Zapisane kopie zapasowe zostają tam, gdzie je zapisałeś; usuń je w tamtym miejscu.</li>
 <li>Twoje sample, zestawy, historia i ustawienia nigdy do nas nie trafiają, więc po naszej stronie nie ma czego z nich usuwać. Raporty o awariach, jeśli zgodziłeś się je wysyłać, są usuwane tak, jak opisuje część „Raporty o awariach”; wyłączenie ich usuwa też raporty czekające jeszcze w telefonie.</li>
 </ul>
